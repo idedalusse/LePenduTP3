@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- By Ben senouci Nidhal 2018-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pendu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/pendu1"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:id="@+id/word_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mot_container"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        tools:ignore="UnknownId">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="141dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <EditText
+            android:id="@+id/letre"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType=""
+            android:maxLength="1"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/send" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mot_container"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/lettres_tapees"
+            android:layout_width="397dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/send"
+            android:textColor="@color/colorRouge"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

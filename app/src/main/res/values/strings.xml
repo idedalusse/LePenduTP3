@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Le Pendu TP3</string>
+    <string name="send">Envoyer</string>
+    <string name="todo">TODO</string>
+</resources>
